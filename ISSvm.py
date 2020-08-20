@@ -135,9 +135,6 @@ if __name__ == '__main__':
          
          mag, magOK = VisualMagnitude( iss, obs, sun )
          
-         #Time                   |  Alt     AZ 
-         # 2020/08/20 15:27:33     0.00 250.37 WSW    2414   3.49  31.04
-         #mag=None 
          print "| "+ephem.localtime(obs.date).strftime('%Y/%m/%d %H:%M:%S'), 
          print "| {:6.2f} | {:6.2f} {:4} | {:6.0f}    | {:6.2f} | {:6.2f}  | {:10}".format( math.degrees(iss.alt), 
                                                                             math.degrees(iss.az), 
