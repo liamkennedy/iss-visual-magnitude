@@ -101,7 +101,7 @@ if __name__ == '__main__':
    obs.lon = "-95.0900"  
        
    obs.date = datetime.utcnow()
-   print "start time:", ephem.localtime(obs.date)
+   print "start time:", ephem.localtime(obs.date).strftime('%Y/%m/%d %H:%M:%S')
    sun = ephem.Sun(obs)
    
    # IMPORTANT:  Did you know the results from obs.next_pass(iss) get REALLY REALLY WEIRD if you run that DURING a pass????
